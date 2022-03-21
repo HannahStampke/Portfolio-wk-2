@@ -1,0 +1,105 @@
+:root {
+    --river-bed: #46505A;
+    --malibu: #94DDF4;
+    --rhino: #323F68;
+    --feijoa: #9EDA8C;
+    --jagged-ice: #C9EDE5;
+    --terracotta: #E68762;
+    --hopbush: #C06396;
+}
+
+body {
+    background-color: var(--river-bed);
+    color: var(--malibu);       
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--feijoa);
+    color: var(--rhino);
+    font-size: 16pt;
+    position: relative;
+}
+
+header h1 {
+    display: inline-flex;
+    position: absolute;
+    bottom: 50px;
+    left: 19px;
+    font-size: 16pt;
+}
+
+header h2 {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+header nav {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    font-size: 16pt;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+
+}
+
+
+
+#portfolio {
+    font-size: 42pt;
+}
+
+#aboutMe {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: var(--hopbush);
+    color: var(--jagged-ice);
+}
+
+#myWorks {
+
+}
+
+#workOne {
+    display: flex;
+    width: 95%;
+    background-color: var(--feijoa);
+    text-align: center;
+    padding: 5%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: var(--river-bed);
+}
+
+.work2-5 {
+    text-align: center;
+    width: 65%;
+    background-color: var(--jagged-ice);
+    color: var(--terracotta);
+    padding: 5%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: var(--river-bed);
+}
+
+.work3-4 {
+    display: flex;
+    text-align: center;
+    width: 30%;
+    background-color: var(--terracotta);
+    color: var(--jagged-ice);
+    padding: 5%;
+    border-style: solid;
+    border-width: 20px;
+    border-color: var(--river-bed);
+}
