@@ -8,105 +8,135 @@
     --hopbush: #C06396;
     --height: 250px;
     --padding: 5%;
+    --boxHeight: 200px;
 }
 
+/* Default background and text color, and width of page */
 body {
     background-color: var(--river-bed);
-    color: var(--malibu);       
+    color: var(--malibu);
+    width: 100%;      
 }
 
+
+/* Header section */
+/* generic header properties */
 header {
     width: 100%;
     height: var(--height);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--feijoa);
     color: var(--rhino);
-    font-size: 16pt;
     position: relative;
 }
 
+/* header H1 display */
 header h1 {
     display: inline-flex;
     position: absolute;
-    bottom: 55px;
-    left: 19px;
+    bottom: 65px;
+    left: 213px;
     font-size: 16pt;
 }
 
+/* header H2 display */
 header h2 {
     position: absolute;
     bottom: 3px;
-    left: 10px;
-}
-
-h3 {
+    left: 210px;
     font-size: 50pt;
 }
 
+/* header image display */
+header img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 25pt 0pt 0pt;
+    border: var(--feijoa);
+}
+
+/* header nav layout */
 header nav {
     display: inline-flex;
     position: absolute;
-    right: 100px;
+    right: 40px;
     bottom: 10px;
     font-size: 16pt;
 }
 
+/* header link padding */
 header a {
     padding: 20px;
 }
 
+/* Header page nav links */
+section figure ul {
+    padding-top: 20px;
+    font-weight:600;
+}
+
+/* All H3 display */
+h3 {
+    font-size: 46pt;
+}
+
+/* Generic article properties */
 article {
     display: flex;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1 0 100%;
     justify-content: center;
 }
 
-section figure ul {
-    padding-top: 20px;
-    font-weight:600;
-}
-
-#portfolio {
-    font-size: 42pt;
-}
-
+/* generic about me properties */
 #aboutMe {
     display: block;
     width: 100%;
-    height: var(--height);
+    height: fit-content;
     padding: var(--padding);
     margin-top: 100px;
     background-color: var(--hopbush);
     color: var(--jagged-ice);
     text-align: justify;
-
 }
 
-#myWorks {
-    width: 100%;
-    height: var(--height);
-    padding: var(--padding);
-    text-align: center;
+/* ID highlight image in work section */
+#workOne-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
+/* ID highlight work section display */
 #workOne {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
     width: 95%;
+    height: 390px;
     background-color: var(--feijoa);
     color: var(--rhino);
     text-align: center;
-    padding: var(--padding);
+    padding: var(250px);
     margin-top: 250px;
     border-style: solid;
     border-width: 20px;
     border-color: var(--river-bed);
+    justify-content: space-between;
 }
 
+/* CLASS 2nd and 5th work sections display */
 .work2-5 {
+    position: relative;
     text-align: right;
     width: 65%;
+    height: var(--boxHeight);
     background-color: var(--jagged-ice);
     color: var(--terracotta);
     padding: var(--padding);
@@ -115,10 +145,13 @@ section figure ul {
     border-color: var(--river-bed);
 }
 
+/* CLASS 3rd and 4th work sections display */
 .work3-4 {
+    position: relative;
     display: flex;
     text-align: left;
     width: 30%;
+    height: var(--boxHeight);
     background-color: var(--terracotta);
     color: var(--jagged-ice);
     padding: var(--padding);
@@ -127,6 +160,14 @@ section figure ul {
     border-color: var(--river-bed);
 }
 
+/* CLASS images in work sections */
+.worksImages {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ID contact me generic display */
 #myHomingpigeons {
     display: block;
     right: 0;
@@ -136,4 +177,9 @@ section figure ul {
     background-color: var(--hopbush);
     color: var(--jagged-ice);
     text-align: right;
+}
+
+/* CLASS contact me font padding */
+.homingFont {
+    padding-top: 10px;
 }
