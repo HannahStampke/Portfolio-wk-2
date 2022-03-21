@@ -34,6 +34,7 @@ header {
 header h1 {
     display: inline-flex;
     position: absolute;
+    flex-wrap: wrap;
     bottom: 65px;
     left: 213px;
     font-size: 16pt;
@@ -61,20 +62,22 @@ header img {
 /* header nav layout */
 header nav {
     display: inline-flex;
+    flex-wrap: wrap;
     position: absolute;
     right: 40px;
     bottom: 10px;
     font-size: 16pt;
 }
 
-/* header link padding */
+/* header individual link padding */
 header a {
-    padding: 20px;
+    padding: 15px;
 }
 
 /* Header page nav links */
 section figure ul {
     padding-top: 20px;
+    padding-right: 10px;
     font-weight:600;
 }
 
@@ -95,7 +98,8 @@ article {
 
 /* generic about me properties */
 #aboutMe {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: fit-content;
     padding: var(--padding);
@@ -134,6 +138,7 @@ article {
 /* CLASS 2nd and 5th work sections display */
 .work2-5 {
     position: relative;
+    display: block;
     text-align: right;
     width: 65%;
     height: var(--boxHeight);
@@ -148,7 +153,8 @@ article {
 /* CLASS 3rd and 4th work sections display */
 .work3-4 {
     position: relative;
-    display: flex;
+    display: block;
+    flex-wrap: wrap;
     text-align: left;
     width: 30%;
     height: var(--boxHeight);
@@ -170,6 +176,7 @@ article {
 /* ID contact me generic display */
 #myHomingpigeons {
     display: block;
+    flex-wrap: wrap;
     right: 0;
     padding: var(--padding);
     margin-top: var(--height);
@@ -183,3 +190,24 @@ article {
 .homingFont {
     padding-top: 10px;
 }
+
+/* work section stacked at 992px or smaller */
+@media screen and (max-width: 992px) {
+    .work2-5 {
+      width: 100%;
+    }
+    .work3-4 {
+        width: 100%;
+      }
+  }
+  
+  /* work section stacked at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .work2-5 {
+        width: 25%;
+      }
+      .work3-4 {
+          width: 25%;
+        }
+  }
+  
