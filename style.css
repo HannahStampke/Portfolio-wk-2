@@ -11,6 +11,24 @@
     --boxHeight: 200px;
 }
 
+.a-ice {
+    color: var(--jagged-ice);
+    text-decoration: none;
+}
+
+.a-ice :hover {
+    color: var(--rhino);
+}
+
+.a-terracotta {
+    color: var(--terracotta);
+    text-decoration: none;
+}
+
+.a-terracotta :hover {
+    color: var(--rhino);
+}
+
 /* Default background and text color, and width of page */
 body {
     background-color: var(--river-bed);
@@ -72,6 +90,10 @@ header nav {
 /* header individual link padding */
 header a {
     padding: 15px;
+    color: var(--rhino);
+    text-decoration: none;
+    font-weight: bold;
+
 }
 
 /* Header page nav links */
@@ -100,13 +122,14 @@ article {
 #aboutMe {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     height: fit-content;
     padding: var(--padding);
     margin-top: 100px;
     background-color: var(--hopbush);
     color: var(--jagged-ice);
-    text-align: justify;
+    font-size: large;
 }
 
 /* ID highlight image in work section */
@@ -126,6 +149,7 @@ article {
     height: 390px;
     background-color: var(--feijoa);
     color: var(--rhino);
+    font-size: large;
     text-align: center;
     padding: var(250px);
     margin-top: 250px;
@@ -164,6 +188,7 @@ article {
     border-style: solid;
     border-width: 20px;
     border-color: var(--river-bed);
+    text-decoration: none;
 }
 
 /* CLASS images in work sections */
@@ -190,6 +215,16 @@ article {
 .homingFont {
     padding-top: 10px;
 }
+
+ul a {
+    color: var(--rhino);
+    text-decoration: none;
+}
+
+ul :hover {
+    color: var(--jagged-ice);
+}
+
 
 /* work section stacked at 992px or smaller */
 @media screen and (max-width: 992px) {
