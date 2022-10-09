@@ -8,7 +8,7 @@
     --hopbush: #C06396;
     --height: 250px;
     --padding: 5%;
-    --boxHeight: 200px;
+    --boxHeight: 300px;
 }
 
 .a-ice {
@@ -159,6 +159,10 @@ article {
     justify-content: space-between;
 }
 
+#workOneLine2 {
+    margin-left: 200px;
+}
+
 /* CLASS 2nd and 5th work sections display */
 .work2-5 {
     position: relative;
@@ -225,6 +229,11 @@ ul :hover {
     color: var(--jagged-ice);
 }
 
+pre {
+    width: auto;
+    height: auto;
+    color: var(--jagged-ice);
+}
 
 /* work section stacked at 992px or smaller */
 @media screen and (max-width: 992px) {
