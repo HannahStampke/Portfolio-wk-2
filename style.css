@@ -210,6 +210,12 @@ article {
     left: 0;
 }
 
+.worksImagesRight {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
 /* ID contact me generic display */
 #myHomingpigeons {
     display: block;
